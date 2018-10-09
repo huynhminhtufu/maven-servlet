@@ -1,0 +1,74 @@
+<?xml version = "1.0"?>
+<students>
+    <student id="khanhkt" class="SE1168">
+        <lastname>
+                Kieu
+        </lastname>
+        <middlename>
+                T.
+        </middlename>
+        <firstname>
+                Khanh
+        </firstname>
+        <sex>
+                1
+        </sex>
+        <password>
+                12345678
+        </password>
+        <address>
+                QTSC
+        </address>
+        <status>
+                studying
+        </status>
+    </student>
+
+    <student id="tuhm" class="SE1168">
+        <lastname>
+                Tu
+        </lastname>
+        <middlename>
+                M.
+        </middlename>
+        <firstname>
+                Huynh
+        </firstname>
+        <sex>
+                1
+        </sex>
+        <password>
+                12345678
+        </password>
+        <address>
+                66/30 45 Street
+        </address>
+        <status>
+                studying
+        </status>
+    </student>
+
+    <student id="minhtc" class="SE1168">
+        <lastname>
+                Minh
+        </lastname>
+        <middlename>
+                C.
+        </middlename>
+        <firstname>
+                Tran
+        </firstname>
+        <sex>
+                1
+        </sex>
+        <password>
+                12345678
+        </password>
+        <address>
+                66/30 45 Street
+        </address>
+        <status>
+                studying
+        </status>
+    </student>
+</students>
