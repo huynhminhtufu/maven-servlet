@@ -1,6 +1,6 @@
 package com.mrhmt.servlet;
 
-import com.mrhmt.dtos.StudentDTO;
+import com.mrhmt.dto.StudentDTO;
 import com.mrhmt.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

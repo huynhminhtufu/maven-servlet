@@ -1,4 +1,4 @@
-package com.mrhmt.dtos;
+package com.mrhmt.dto;
 
 import java.io.Serializable;
 
