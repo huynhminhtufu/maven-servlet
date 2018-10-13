@@ -8,12 +8,14 @@
 <body>
 <p>Hello, ${sessionScope.FULLNAME}</p>
 <h1>Search</h1>
-<form action="SearchServlet">
-    Address: <input name="txtKeyword" value="${param.txtKeyword}"/>
+<form action="ProcessServlet">
+    Status: <input name="txtStatus" value="${param.txtStatus}"/>
+    <br/>
+    <input type="submit" value="Search" name="btAction" />
 </form>
 
-<c:set var="keyword" value="${param.txtKeyword}"/>
-<c:if test="${not empty keyword}">
+<c:set var="status" value="${param.txtStatus}"/>
+<c:if test="${not empty status}">
     <c:set var="result" value="${requestScope.SEARCHRESULT}"/>
 
     <c:if test="${not empty result}">
@@ -34,33 +36,42 @@
             </thead>
             <tbody>
             <c:forEach items="${result}" var="dto" varStatus="counter">
+                <form action="ProcessServlet">
                 <tr>
-                    <td><input type="checkbox" name="remove[]" value="${dto.id}" /></td>
-                    <td>${counter.count}</td>
-                    <td>${dto.id}</td>
-                    <td>${dto.sClass}</td>
-                    <td>${dto.last} ${dto.middle} ${dto.first}</td>
-                    <td>${dto.address}</td>
                     <td>
-                        <c:if test="${dto.sex}">
-                            Male
-                        </c:if>
-                        <c:if test="${not dto.sex}">
-                            Female
-                        </c:if>
+                        <input type="hidden" name="remove[]" value="${dto.id}" />
+                    </td>
+                    <td>${counter.count}</td>
+                    <td>
+                        ${dto.id}
+                        <input type="hidden" name="txtId" value="${dto.id}" />
+                    </td>
+                    <td><input type="text" name="txtClass" value="${dto.sClass}"/></td>
+                    <td>${dto.last} ${dto.middle} ${dto.first}</td>
+                    <td>
+                        <input type="text" name="txtAddress" value="${dto.address}" />
+                    </td>
+                    <td>
+                       ${dto.sex}
                     </td>
                     <td>${dto.status}</td>
                     <td>
-                        <c:url var="removeStudent" value="RemoveServlet">
+                        <c:url var="delLink" value="ProcessServlet">
+                            <c:param name="btAction" value="Delete" />
                             <c:param name="id" value="${dto.id}"/>
+                            <c:param name="lastSearchValue" value="${param.txtStatus}"/>
                         </c:url>
-                        <a href="${removeStudent}" title="Remove">Remove</a>
+                        <a href="${delLink}" title="Remove">Delete</a>
+                    </td>
+                    <td>
+                        <input type="submit" value="Update" name="btAction" />
+                        <input type="hidden" value="${param.txtStatus}" name="lastSearchValue"/>
                     </td>
                 </tr>
+                </form>
             </c:forEach>
             </tbody>
         </table>
-        <button type="submit">Delete Students</button>
     </c:if>
     <c:if test="${empty result}">
         <p>No student found!</p>

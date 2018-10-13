@@ -1,24 +1,50 @@
 package com.mrhmt.dto;
 
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
+@XmlRootElement(name="student")
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name="student", propOrder = {
+        "last",
+        "middle",
+        "first",
+        "sex",
+        "password",
+        "address",
+        "status"
+})
 public class StudentDTO implements Serializable {
+    @XmlAttribute
     private String id;
+    @XmlAttribute(name="class")
     private String sClass;
+    @XmlElement(name="firstname")
     private String first;
+    @XmlElement(name="middlename")
     private String middle;
+    @XmlElement(name="lastname")
     private String last;
-    private boolean sex;
+    @XmlElement
+    private int sex;
+    @XmlElement
+    private String password;
+    @XmlElement
     private String address;
+    @XmlElement
     private String status;
 
-    public StudentDTO(String id, String sClass, String first, String middle, String last, boolean sex, String address, String status) {
+    public StudentDTO() {
+    }
+
+    public StudentDTO(String id, String sClass, String first, String middle, String last, int sex, String password, String address, String status) {
         this.id = id;
         this.sClass = sClass;
         this.first = first;
         this.middle = middle;
         this.last = last;
         this.sex = sex;
+        this.password = password;
         this.address = address;
         this.status = status;
     }
@@ -63,12 +89,20 @@ public class StudentDTO implements Serializable {
         this.last = last;
     }
 
-    public boolean isSex() {
+    public int getSex() {
         return sex;
     }
 
-    public void setSex(boolean sex) {
+    public void setSex(int sex) {
         this.sex = sex;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getAddress() {

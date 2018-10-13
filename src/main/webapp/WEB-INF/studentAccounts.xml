@@ -1,5 +1,4 @@
-<?xml version = "1.0"?>
-<students>
+<?xml version="1.0" encoding="UTF-8"?><students>
     <student id="khanhkt" class="SE1168">
         <lastname>
                 Kieu
@@ -71,4 +70,4 @@
                 studying
         </status>
     </student>
-</students>
+<student id="tricvm" class="SE1168"><lastname>Tri</lastname><middlename>Tri</middlename><firstname>Tri</firstname><sex>1</sex><password>1234567</password><address>Khong co</address><status>studying</status></student></students>
