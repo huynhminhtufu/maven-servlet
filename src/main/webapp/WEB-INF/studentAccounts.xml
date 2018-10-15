@@ -1,73 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><students>
-    <student id="khanhkt" class="SE1168">
-        <lastname>
+    <student id="khanhkt" class="SE1168"><lastname>
                 Kieu
-        </lastname>
-        <middlename>
+        </lastname><middlename>
                 T.
-        </middlename>
-        <firstname>
+        </middlename><firstname>
                 Khanh
-        </firstname>
-        <sex>
-                1
-        </sex>
-        <password>
+        </firstname><sex>1</sex><password>
                 12345678
-        </password>
-        <address>
-                QTSC
-        </address>
-        <status>
+        </password><address>QTSC</address><status>
                 studying
-        </status>
-    </student>
+        </status></student>
 
-    <student id="tuhm" class="SE1168">
-        <lastname>
+    <student id="tuhm" class="SE1168"><lastname>
                 Tu
-        </lastname>
-        <middlename>
+        </lastname><middlename>
                 M.
-        </middlename>
-        <firstname>
+        </middlename><firstname>
                 Huynh
-        </firstname>
-        <sex>
-                1
-        </sex>
-        <password>
+        </firstname><sex>1</sex><password>
                 12345678
-        </password>
-        <address>
-                66/30 45 Street
-        </address>
-        <status>
+        </password><address>66/30 45 Street</address><status>
                 studying
-        </status>
-    </student>
+        </status></student>
 
-    <student id="minhtc" class="SE1168">
-        <lastname>
+    <student id="minhtc" class="SE1168"><lastname>
                 Minh
-        </lastname>
-        <middlename>
+        </lastname><middlename>
                 C.
-        </middlename>
-        <firstname>
+        </middlename><firstname>
                 Tran
-        </firstname>
-        <sex>
-                1
-        </sex>
-        <password>
+        </firstname><sex>1</sex><password>
                 12345678
-        </password>
-        <address>
-                66/30 45 Street
-        </address>
-        <status>
+        </password><address>66/30 45 Street</address><status>
                 studying
-        </status>
-    </student>
-<student id="tricvm" class="SE1168"><lastname>Tri</lastname><middlename>Tri</middlename><firstname>Tri</firstname><sex>1</sex><password>1234567</password><address>Khong co</address><status>studying</status></student></students>
+        </status></student>
+<student id="thanhdc" class="SE1168"><lastname>Tri</lastname><middlename>Tri</middlename><firstname>Tri</firstname><sex>1</sex><password>1234567</password><address>Khong co</address><status>studying</status></student></students>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<customers xmlns:account="abc.vn">
+    <account:allowed username="thinkk" balance="230">
+        <fullname>asdf</fullname>
+        <address>asdfs</address>
+        <pin>8970</pin>
+        <class>D</class>
+        <transactions>
+            <transaction>
+                <id>87239874</id>
+                <date>2018/07/12</date>
+                <amount>50</amount>
+                <type>1</type>
+            </transaction>
+            <transaction>
+                <id>87239874</id>
+                <date>2018/07/12</date>
+                <amount>50</amount>
+                <type>1</type>
+            </transaction>
+            <transaction>
+                <id>123342123</id>
+                <date>2018/07/13</date>
+                <amount>150</amount>
+                <type>2</type>
+            </transaction>
+            <transaction>
+                <id>4247654321</id>
+                <date>2018/07/14</date>
+                <amount>250</amount>
+                <type>3</type>
+            </transaction>
+        </transactions>
+    </account:allowed>
+    <account:expired username="teramind" balance="2300">
+        <fullname>Tera Mind</fullname>
+        <address>120 KDA</address>
+        <pin>9999</pin>
+        <class>A</class>
+        <transactions>
+            <transaction>
+                <id>123123</id>
+                <date>2018/08/12</date>
+                <amount>150</amount>
+                <type>1</type>
+            </transaction>
+        </transactions>
+    </account:expired>
+    <account:allowed username="thinkk" balance="230">
+        <fullname>asdf</fullname>
+        <address>asdfs</address>
+        <pin>8970</pin>
+        <class>D</class>
+        <transactions>
+            <transaction>
+                <id>246776543</id>
+                <date>2018/08/12</date>
+                <amount>250</amount>
+                <type>1</type>
+            </transaction>
+            <transaction>
+                <id>6543234</id>
+                <date>2018/08/13</date>
+                <amount>350</amount>
+                <type>2</type>
+            </transaction>
+            <transaction>
+                <id>4247654321</id>
+                <date>2018/08/14</date>
+                <amount>450</amount>
+                <type>3</type>
+            </transaction>
+        </transactions>
+    </account:allowed>
+</customers>
