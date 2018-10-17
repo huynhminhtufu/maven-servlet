@@ -112,7 +112,7 @@ public class XMLUtils implements Serializable {
                 if (event.isStartElement()) {
                     StartElement start = (StartElement) event;
 
-                    if (start.getName(). getLocalPart().equals(elementName)) {
+                    if (start.getName().getLocalPart().equals(elementName)) {
                         Attribute attr = start.getAttributeByName(new QName(namespaceURI, attrName));
 
                         if (attr != null) {

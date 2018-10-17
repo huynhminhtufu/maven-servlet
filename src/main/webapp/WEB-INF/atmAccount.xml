@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <customers xmlns:account="abc.vn">
-    <account:allowed username="thinkk" balance="230">
+    <account:allowed username="tuhm" balance="230">
         <fullname>asdf</fullname>
         <address>asdfs</address>
-        <pin>8970</pin>
+        <pin>123456</pin>
         <class>D</class>
         <transactions>
             <transaction>

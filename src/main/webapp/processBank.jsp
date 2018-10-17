@@ -23,7 +23,7 @@
     <x:parse var="doc" doc="${xmlDoc}" scope="session"/>
     <c:out value="${username}" />
     <c:out value="${password}" />
-    <x:if select="$doc//*[@username=$username and @pin=$password]">
+    <x:if select="$doc//*[local-name()='allowed' and @username=$username and pin=$password]">
         <c:out value="Ahihi"/>
         <jsp:forward page="transactionView.jsp"/>
     </x:if>
